@@ -17,9 +17,7 @@ namespace MKR1
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             System.Data.Entity.Database.SetInitializer(new DatabaseInitializer());
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }
